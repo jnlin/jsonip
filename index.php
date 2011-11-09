@@ -1,1 +1,1 @@
-<?= json_encode(array('ip' => $_SERVER['REMOTE_ADDR'], 'address' => $_SERVER['REMOTE_HOST'])) ?>
+<?= json_encode(array('ip' => $_SERVER['HTTP_X_FORWARDED_FOR'], 'address' => $_SERVER['HTTP_X_FORWARDED_FOR'])) ?>
